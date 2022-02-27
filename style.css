@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+   /*-------------------------------------------------navbar -------------------------------------------*/
+   nav{
+    height: 50px;
+    background: brown;
+     margin-top: 50px;
+}
+nav img{
+    width: 400px;
+    height:100px;
+    position: absolute;
+    margin-top: -35px;
+    left: 2%;
+    border:2px solid black;
+    background: white;
+
+}
+nav ul{
+    float: right;
+    margin-right: 350px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    text-decoration:uppercase;
+}
+nav ul li a ::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: white;
+        
+        transition: all 1s linear;
+}
+nav ul li a:hover{
+     
+    border-bottom: 2px white solid;
+    text-shadow: 1px 2px brown;
+}
+label #btn, label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-left:40px;
+    cursor: pointer;
+    display: none;
+}
+ 
+     /*-------------------------------------------------navbar -------------------------------------------*/
+ .main-image img{
+     padding: 0;
+     image-orientation:none;
+     width: 100vw;
+     height: 100vh;
+     margin-top: -45px;
+ }
+ .upper-text{
+    margin-top: 100px;
+    margin-left:200px ;
+     margin-left:20% ;
+     border-left: 2px black;   
+ }
+ .card-imge{
+     width: 200px;
+     height: 80px;
+     border-bottom: 1px white solid;
+     background: white;
+
+ }
+ .carde{
+     background: yellow;
+     width: 300px;
+     position: absolute;
+     margin-top:-700px;
+     margin-left: 75%;
+     box-shadow: 10px rgb(151, 138, 138);
+     border-radius: 5px;
+     
+ }
+ .card-body input{
+    margin-bottom: 5px;
+    width: 250px;
+ }
+ .card-footeer{
+     display: flex;
+ }
+ .card-footer input{
+     float: left;
+     width: 5px;
+     height: 5px;
+ } 
+ .footer-text{
+     font-size: 10px;
+ }
+   .card-body i{
+       font-size: 20px;
+   }
+   .card-body .btn{
+       background: brown;
+       color: white;
+       transition: 1s ease;
+      
+   }
+   .card-body .btn:hover{
+    background: white;
+    color: brown;
+    
+}
+ /*-----------------------------------------responsive ----------*/
+ @media(max-width:1300px){
+    nav img{
+        width: 300px;
+        height:80px;
+        position: absolute;
+        margin-top: -20px;
+        left: 2%;
+        border:2px solid black;
+        background: white;
+    
+    }
+   
+}
+ @media(max-width:1200px){
+    nav img{
+        width: 200px;
+        height:80px;
+        position: absolute;
+        margin-top: -20px;
+        left: 2%;
+        border:2px solid black;
+        background: white;
+    
+    }
+    nav ul{
+        float: right;
+        margin-right: 350px;
+    }  
+      
+
+ }
+ @media(max-width:1000px){
+    .carde{
+        background: yellow;
+        width: 300px;
+        position: absolute;
+        margin-top: -300px;
+       margin-left: 25%;
+        box-shadow: 10px rgb(151, 138, 138);
+        border-radius: 10px; 
+        width: 500px;  
+    }  
+    nav ul{
+        float: right;
+        margin-right: 100px;
+    }  
+    #about-us{
+        margin-top: 450px;
+    }
+    .card-imge{
+        width:400px;
+        height: 100px;
+
+    }
+    .card-header #uper-card-text{
+       size: 45px;
+    }
+    .card-body input{
+        margin-bottom: 20px;
+        width: 350px;
+        height: 40px;
+     }
+     .card-footeer{
+         display: flex;
+     }
+     .card-footer input{
+         float: left;
+         width: 5px;
+         height: 5px;
+     } 
+     .footer-text{
+         font-size: 10px;
+     }
+       .card-body i{
+           font-size: 20px;
+       }
+       .card-body .btn{
+           background: brown;
+           color: white;
+           transition: 1s ease;
+           width: 150px;
+           height: 50px;  
+       }
+       .card-body .btn:hover{
+        background: white;
+        color: brown;
+        
+    }
+     
+      
+ }
+ 
+ @media(max-width:800px){
+    .carde{
+        background: yellow;
+        width: 300px;
+        position: absolute;
+        margin-top: -350px;
+       margin-left: 20%;
+        box-shadow: 20px rgb(151, 138, 138);
+        border-radius: 10px; 
+        width: 500px;  
+    }  
+    nav ul{
+        float: right;
+        margin-right: 0px;
+    }
+    #about-us{
+        margin-top: 400px;
+    }
+    .card-imge{
+        width:400px;
+        height: 100px;
+
+    }
+    .card-header #uper-card-text{
+       size: 45px;
+    }
+    .card-body input{
+        margin-bottom: 20px;
+        width: 350px;
+        height: 40px;
+     }
+     .card-footeer{
+         display: flex;
+     }
+     .card-footer input{
+         float: left;
+         width: 5px;
+         height: 5px;
+     } 
+     .footer-text{
+         font-size: 10px;
+     }
+       .card-body i{
+           font-size: 20px;
+       }
+       .card-body .btn{
+           background: brown;
+           color: white;
+           transition: 1s ease;
+           width: 150px;
+           height: 50px;  
+       }
+       .card-body .btn:hover{
+        background: white;
+        color: brown;
+        
+    }
+      
+ }
+ 
+ @media(max-width:600px){
+    .carde{
+        background: yellow;
+        
+        position: absolute;
+        margin-top: -400px;
+       margin-left: 20%;
+        box-shadow: 10px rgb(151, 138, 138);
+        border-radius: 10px; 
+        width: 300px;  
+    }  
+    nav ul li a{
+        display: none;
+    }
+    #about-us{
+        margin-top: 225px;
+    }
+    .card-imge{
+        width:200px;
+        height: 50px;
+
+    }
+     
+    .card-body input{
+        margin-bottom: 20px;
+        width: 250px;
+        height: 30px;
+     }
+     .card-footeer{
+         display: flex;
+     }
+     .card-footer input{
+         float: left;
+         width: 15px;
+         height: 15px;
+     } 
+     .footer-text{
+         font-size: 10px;
+     }
+       .card-body i{
+           font-size: 20px;
+       }
+       .card-body .btn{
+           background: brown;
+           color: white;
+           transition: 1s ease;
+           width: 150px;
+           height: 35px;  
+       }
+       .card-body .btn:hover{
+        background: white;
+        color: brown;
+        
+    }
+      
+ }
+     
+ }   
+     
+    
+ 
+  
